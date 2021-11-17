@@ -170,8 +170,6 @@ services:
 
   airflow-init:
     <<: *airflow-common
-    entrypoint: /bin/bash
-    # yamllint disable rule:line-length
     command: version
     environment:
       <<: *airflow-common-env
